@@ -1,0 +1,153 @@
+<div style="min-height: 100%;background-color: rgb(243, 243, 243);margin-top: 0%;">
+
+    <div class="container">
+        <h3 class="p-4">Student Attendance</h3>
+        <div class="d-flex">
+            <div class="w-25 me-2">
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>All</option>
+                    <option value="1">10th</option>
+                    <option value="2">9th</option>
+                    <option value="3">8th</option>
+                </select>
+            </div>
+            <div class="input-group w-25">
+                <input type="text" class="form-control" placeholder="Search.." aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" style="background-color: gray;" type="button"><i
+                            class="fa fa-search"></i></button>
+                </div>
+
+            </div>
+
+            <button type="button" class="btn btn-success ml-1" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">Attendance Register</button>
+
+        </div>
+
+        <!--  Students Attendance register Modal -->
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Students Attendance</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <div class="form-outline mb-4 ">
+                                <label for="">Date</label>
+                                <input type="date" id="form3Example3" class="form-control" placeholder="Date" />
+                            </div>
+                            <label for="">Select Class</label>
+                            <select class="form-select mb-4 w-50" aria-label="Default select example">
+                                <option selected>All</option>
+                                <option value="1">10th</option>
+                                <option value="2">9th</option>
+                                <option value="3">8th</option>
+                            </select>
+                        </div>
+                        <div>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Reg no</th>
+                                        <th scope="col">Full name</th>
+                                        <th scope="col">Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td class="text-center"><input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault"></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td class="text-center"><input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Larry the Bird</td>
+                                        <td class="text-center"><input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary ">Update </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+
+        <!-- Table -->
+
+        <table class="table mt-4" style="background-color: white;">
+            <thead>
+                <tr>
+                    <th scope="col">Reg no</th>
+                    <th scope="col">Full name</th>
+                    <th scope="col">last 7 day</th>
+                    <th scope="col">Today</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td class="d-flex">
+                        <p style="color: green;">P </p>&nbsp;
+                        <p style="color: red;">A </p>&nbsp;
+                        <p style="color: green;">P </p>&nbsp;
+                        <p style="color: red;">A </p>&nbsp;
+                        <p style="color: green;">P </p>&nbsp;
+                        <p style="color: green;">P </p>&nbsp;
+                        <p style="color: green;">P </p>&nbsp;
+                    </td>
+                    <td style="color: green;">Present</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td class="d-flex">
+                        <p style="color: green;">P </p>&nbsp;
+                        <p style="color: red;">A </p>&nbsp;
+                        <p style="color: green;">P </p>&nbsp;
+                        <p style="color: red;">A </p>&nbsp;
+                        <p style="color: green;">P </p>&nbsp;
+                        <p style="color: green;">P </p>&nbsp;
+                        <p style="color: green;">P </p>&nbsp;
+                    </td>
+                    <td style="color: green;">Present</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Jacob</td>
+                    <td class="d-flex">
+                        <p style="color: green;">P </p>&nbsp;
+                        <p style="color: red;">A </p>&nbsp;
+                        <p style="color: green;">P </p>&nbsp;
+                        <p style="color: red;">A </p>&nbsp;
+                        <p style="color: green;">P </p>&nbsp;
+                        <p style="color: green;">P </p>&nbsp;
+                        <p style="color: green;">P </p>&nbsp;
+                    </td>
+                    <td style="color: green;">Present</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </div>
+</div>
